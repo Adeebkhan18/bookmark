@@ -1,0 +1,71 @@
+body {
+  background-image: url("https://mrwallpaper.com/images/hd/motivational-quote-desktop-wallpaper-on-a-sleek-laptop-5zdo5847qtjz7eow.jpg");
+  background-color: #ffffff;
+  background-size: contain;
+  background-repeat: repeat;
+
+  a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+  a:hover {
+    color: rgb(218, 122, 13);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: rgb(20, 135, 150);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+}
+
+div {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  color: rgb(175, 98, 50);
+}
+
+#my {
+  color: #00748E;
+}
+
+/* .bapp2{
+  display: inline;
+} */
+
+h1 {
+  border: 2px black solid;
+  border-width: 0px 0px 4px 0px;
+  width: 36vw;
+  height: 6vh;
+  margin: 0px 0px 0px 0px;
+
+  text-shadow: 3px 3px 3px #ff8000;
+  box-shadow: 3px 3px 3px #f97c00;
+  display: inline;
+}
+
+* {
+  text-shadow: 2px 2px 20px #f97c00;
+  margin: 7px;
+}
+/* .stopWatch{
+  float: right;
+  position: relative;
+  clear:right;
+  justify-content: right;
+} */
+
+  
