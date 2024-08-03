@@ -1,40 +1,55 @@
 body {
-  background-image: url("https://mrwallpaper.com/images/hd/motivational-quote-desktop-wallpaper-on-a-sleek-laptop-5zdo5847qtjz7eow.jpg");
-  background-color: #ffffff;
-  background-size: contain;
-  background-repeat: repeat;
+  /* background-image: url("https://mrwallpaper.com/images/hd/motivational-quote-desktop-wallpaper-on-a-sleek-laptop-5zdo5847qtjz7eow.jpg"); */
 
-  a:visited {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-
-  a:hover {
-    color: rgb(218, 122, 13);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: rgb(20, 135, 150);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
+  background-size: cover;
+  background-repeat: auto;
+  
 }
+#background-video {
+  width: 110vw;
+  height: 110vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(3px);
+  top: -10px;
+  left: -10px;
+}
+
+a:visited {
+  color: rgb(6, 251, 38);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(25, 238, 107);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: rgb(218, 122, 13);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(20, 135, 150);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 div {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
-  color: rgb(175, 98, 50);
+  color: rgb(255, 0, 0);
 }
 
 #my {
@@ -42,8 +57,8 @@ div {
 }
 
 /* .bapp2{
-  display: inline;
-} */
+    display: inline;
+  } */
 
 h1 {
   border: 2px black solid;
@@ -58,14 +73,6 @@ h1 {
 }
 
 * {
-  text-shadow: 2px 2px 20px #f97c00;
+  /* text-shadow: 2px 2px 20px #f97c00; */
   margin: 7px;
 }
-/* .stopWatch{
-  float: right;
-  position: relative;
-  clear:right;
-  justify-content: right;
-} */
-
-  
