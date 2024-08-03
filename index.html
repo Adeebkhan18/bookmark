@@ -1,340 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks</title>
-    <link rel="icon" type="image/x-icon" href="C:\Users\user\.vscode\cli\bookmarks\bookmark-flat.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookmarks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Srijita's Workspace</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+          <li><a class="nav-link dropdown-toggle" target="_blank" href="https://meet.google.com/bwb-ckpd-mjj">Home
+              🏠❤️</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Links to become doctor👩‍🔬
+            </a>
+            <ul class="dropdown-menu">
+              <li><a style="text-decoration:none" target="_blank" href="https://www.youtube.com">Youtube ▶</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://www.pw.live">physics wallah</a></li>
+              <li><a style="text-decoration:none" target="_blank"
+                  href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/batch-overview?came_from=my-batches&activeSection=All%20Classes">Subjects🎓</a>
+              </li>
+              <li><a style="text-decoration:none" target="_blank"
+                  href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/physics-128038/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Physics&batchSubjectId=664af18505b05b0018e22da9">Physics🪐</a>
+              </li>
+              <li><a class="bapp2" style="text-decoration:none" target="_blank"
+                  href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/physical-chemistry-491985/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Physical%20Chemistry&batchSubjectId=664af221ec1436001853ffc3">Chemistry⚗️</a>
+              </li>
+              <li><a style="text-decoration:none" target="_blank"
+                  href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/botany-276723/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Botany&batchSubjectId=664af1b09d68ed00183a0228">Botany🌱</a>
+              </li>
+              <li><a style="text-decoration:none" target="_blank"
+                  href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/zoology-128384/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Zoology&batchSubjectId=664af1d613c84b00180f9c7f">Zoology🫀</a>
+              </li>
+              <li><a style="text-decoration:none" target="_blank" href="https://www.cymath.com/">Math Solver&#128218</a>
+              </li>
+              <div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              App
+            </a>
+            <ul class="dropdown-menu">
+              <div class="app">
+                <div class="stopWatch">
+                  <div class="container">
+                      <div id="time">
+                          <span class="digits" id="hour">00</span>
+                          <span class="text"> Hr </span>
+                          <span class="digits" id="minute">00</span>
+                          <span class="text"> Min </span>
+                          <span class="digits" id="second">00</span>
+                          <span class="text"></span>
+                          <span class="digits" id="count"></span>
+                      </div>
+                      <div id="buttons">
+                          <button class="btn" id="start">Start</button>
+                          <button class="btn" id="stop">Stop</button>
+                          <button class="btn" id="reset">Reset</button>
+                      </div></div></div>
+              
+                        <div class="spotify">
+                          <iframe class="app" style="border-radius:30px"
+                              src="https://open.spotify.com/embed/playlist/37i9dQZF1EJBbcqOd2BzIs?utm_source=generato" width="500px"
+                              height="315px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                          <div class="youtube">
+                              <iframe class="app2" width="500px" height="315px"
+                              src="https://www.youtube.com/embed/videoseries?si=w_vbIob75SIiYmF2&amp;list=PL9sIhT5cGqDh22ldxNRcXuSWurN_bwWlS"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+                      <script>
+                        let startButton = document.getElementById('start');
+                      let stopButton = document.getElementById('stop');
+                      let resetButton = document.getElementById('reset');
+                  
+                      let hour = 0, minute = 0, second = 0, count = 0;
+                      let startTime, elapsedTime = 0;
+                      let timer = false;
+                  
+                      startButton.addEventListener('click', function () {
+                          if (!timer) {
+                              timer = true;
+                              startTime = Date.now() - elapsedTime;
+                              stopWatch();
+                          }
+                      });
+                  
+                      stopButton.addEventListener('click', function () {
+                          if (timer) {
+                              timer = false;
+                              elapsedTime = Date.now() - startTime;
+                          }
+                      });
+                  
+                      resetButton.addEventListener('click', function () {
+                          timer = false;
+                          startTime = null;
+                          elapsedTime = 0;
+                          hour = 0;
+                          minute = 0;
+                          second = 0;
+                          count = 0;
+                          document.getElementById('hour').innerHTML = "00";
+                          document.getElementById('minute').innerHTML = "00";
+                          document.getElementById('second').innerHTML = "00";
+                      });
+                  
+                      function stopWatch() {
+                          if (timer) {
+                              elapsedTime = Date.now() - startTime;
+                  
+                              hour = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+                              minute = Math.floor((elapsedTime / (1000 * 60)) % 60);
+                              second = Math.floor((elapsedTime / 1000) % 60);
+                              count = Math.floor((elapsedTime % 1000) / 10);
+                  
+                              document.getElementById('hour').innerHTML = formatTime(hour);
+                              document.getElementById('minute').innerHTML = formatTime(minute);
+                              document.getElementById('second').innerHTML = formatTime(second);
+                  
+                              requestAnimationFrame(stopWatch);
+                          }
+                      }
+                  
+                      function formatTime(time) {
+                          return time < 10 ? "0" + time : time;
+                      }
+                      </script>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Socials 📲
+            </a>
+            <ul class="dropdown-menu">
+              <li><a style="text-decoration:none" target="_blank" href="https://www.instagram.com/">Instagram📸</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://web.whatsapp.com/">Whatsapp ✆</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://www.facebook.com/">Facebook ⓕ</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://in.pinterest.com/">Pinterest📌</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://discord.com/channels/@me">Discord💻</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Entertainment District🎥
+            </a>
+            <ul class="dropdown-menu">
+              <li><a style="text-decoration:none" target="_blank" href="https://open.spotify.com/">Spotify🎧</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://www.netflix.com/in/">Netflix🍿</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://www.primevideo.com/">Amazon Prime🎬</a>
+              </li>
+              <li><a style="text-decoration:none" target="_blank" href="https://ww8.gogoanimes.fi/">Anime🍥</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://myanimelist.net/">Anime List⛩️</a></li>
+              <li><a style="text-decoration:none" target="_blank" href="https://monkeytype.com/">Typing Test⌨️</a></li>
+            </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TODOs
+              </a>
+              <ul class="dropdown-menu">
+                
+<div class="container my-4">
+  <h2 class="text-center">TODOs List</h2>
+   
+      <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+      </div>
+
+      <div class="form-group">
+          <label for="description">Description</label>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
+      
+
+      <button   id="add" class="btn btn-primary">Add</button>
+      <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear</button>
+   
+
+  <div id="items" class="my-4">
+      <h2>Your Items</h2>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">SNo</th>
+              <th scope="col">Item Title</th>
+              <th scope="col">Item Description</th> 
+              <th scope="col">Actions</th> 
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Get some Coffee</td>
+              <td>You need coffee as you are a coder</td> 
+              <td><button class="btn btn-sm btn-primary">Delete</button></td> 
+            </tr>
+            
+          </tbody>
+        </table>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+  <script>
+      function getAndUpdate(){
+          console.log("Updating List...");
+          tit = document.getElementById('title').value;
+          desc = document.getElementById('description').value;
+          if (localStorage.getItem('itemsJson')==null){
+              itemJsonArray = [];
+              itemJsonArray.push([tit, desc]);
+              localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+          }
+          else{
+              itemJsonArrayStr = localStorage.getItem('itemsJson')
+              itemJsonArray = JSON.parse(itemJsonArrayStr);
+              itemJsonArray.push([tit, desc]);
+              localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+          }
+          update();
+      }
+
+      function update(){
+          if (localStorage.getItem('itemsJson')==null){
+              itemJsonArray = []; 
+              localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+          } 
+          else{
+              itemJsonArrayStr = localStorage.getItem('itemsJson')
+              itemJsonArray = JSON.parse(itemJsonArrayStr); 
+          }
+          // Populate the table
+          let tableBody = document.getElementById("tableBody");
+          let str = "";
+          itemJsonArray.forEach((element, index) => {
+              str += `
+              <tr>
+              <th scope="row">${index + 1}</th>
+              <td>${element[0]}</td>
+              <td>${element[1]}</td> 
+              <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+              </tr>`; 
+          });
+          tableBody.innerHTML = str;
+      }
+      add = document.getElementById("add");
+      add.addEventListener("click", getAndUpdate);
+      update();
+      function deleted(itemIndex){
+          console.log("Delete", itemIndex);
+          itemJsonArrayStr = localStorage.getItem('itemsJson')
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+          // Delete itemIndex element from the array
+          itemJsonArray.splice(itemIndex, 1);
+          localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+          update();
+
+      }
+      function clearStorage(){
+          if (confirm("Do you areally want to clear?")){
+          console.log('Clearing the storage')
+          localStorage.clear();
+          update()
+          }
+      }
+  </script>
+
+
+
+              </ul>
+            </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+        
+        
 </head>
 
 <body>
-    <div class="stopWatch">
-        <div class="container">
-            <div id="time">
-                <span class="digits" id="hour">00</span>
-                <span class="text"> Hr </span>
-                <span class="digits" id="minute">00</span>
-                <span class="text"> Min </span>
-                <span class="digits" id="second">00</span>
-                <span class="text"></span>
-                <span class="digits" id="count"></span>
-            </div>
-            <div id="buttons">
-                <button class="btn" id="start">Start</button>
-                <button class="btn" id="stop">Stop</button>
-                <button class="btn" id="reset">Reset</button>
-            </div>
-            <iframe class="app" style="border-radius:30px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EJBbcqOd2BzIs?utm_source=generato" width="300px" height="500px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="app2" width="500px" height="315px" src="https://www.youtube.com/embed/videoseries?si=w_vbIob75SIiYmF2&amp;list=PL9sIhT5cGqDh22ldxNRcXuSWurN_bwWlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
+  
+  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="Y2meta.app-(NO COPYRIGHT) _ Short Blur Rain Cinematic Background Video _ (NO WATERMARK)-(720p60).mp4" type="video/mp4">
+  </video>
+  
     
-    <style>
-        .stopWatch {
-            backdrop-filter: blur(10px);
-            border-radius: 50px;
-            width: 300px;
-            height: 200px;
-            float: right;
-            position: relative;
-            font-family: 'Times New Roman';
-        }
-    
-        .container {
-            text-align: center;
-        }
-    
-        .p {
-            color: purple;
-            padding: 20px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-    
-        .digits {
-            font-size: 30px;
-            color: papayawhip;
-        }
-    
-        .text {
-            font-size: 20px;
-            color: hotpink;
-            font-weight: bold;
-        }
-    
-        .btn {
-            width: 90px;
-            height: 50px;
-            padding: 8px;
-            margin: 10px 25px 20px 10px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 20px;
-            transition: 0.7s;
-            color: white;
-            font-weight: 550;
-            border: none;
-            font-family: 'Times New Roman';
-        }
-    
-        .btn:hover {
-            color: indigo;
-        }
-    
-        #start {
-            background-color: indigo;
-        }
-    
-        #stop {
-            background-color: mediumpurple;
-        }
-    
-        #reset {
-            background-color: plum;
-        }
-    
-        #start:hover, #stop:hover, #reset:hover {
-            background-color: white;
-        }
-    
-        .app, .app2 {
-            float: right;
-            border-radius: 30px;
-            position: relative;
-        }
-    </style>
-    
-    <script>
-        let startButton = document.getElementById('start');
-        let stopButton = document.getElementById('stop');
-        let resetButton = document.getElementById('reset');
-    
-        let hour = 0, minute = 0, second = 0, count = 0;
-        let startTime, elapsedTime = 0;
-        let timer = false;
-    
-        startButton.addEventListener('click', function () {
-            if (!timer) {
-                timer = true;
-                startTime = Date.now() - elapsedTime;
-                stopWatch();
-            }
-        });
-    
-        stopButton.addEventListener('click', function () {
-            if (timer) {
-                timer = false;
-                elapsedTime = Date.now() - startTime;
-            }
-        });
-    
-        resetButton.addEventListener('click', function () {
-            timer = false;
-            startTime = null;
-            elapsedTime = 0;
-            hour = 0;
-            minute = 0;
-            second = 0;
-            count = 0;
-            document.getElementById('hour').innerHTML = "00";
-            document.getElementById('minute').innerHTML = "00";
-            document.getElementById('second').innerHTML = "00";
-        });
-    
-        function stopWatch() {
-            if (timer) {
-                elapsedTime = Date.now() - startTime;
-    
-                hour = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
-                minute = Math.floor((elapsedTime / (1000 * 60)) % 60);
-                second = Math.floor((elapsedTime / 1000) % 60);
-                count = Math.floor((elapsedTime % 1000) / 10);
-    
-                document.getElementById('hour').innerHTML = formatTime(hour);
-                document.getElementById('minute').innerHTML = formatTime(minute);
-                document.getElementById('second').innerHTML = formatTime(second);
-    
-                requestAnimationFrame(stopWatch);
-            }
-        }
-    
-        function formatTime(time) {
-            return time < 10 ? "0" + time : time;
-        }
-    </script>
-    
-    
-    <div>
-       
+        <script>
+          var today = new Date()
+          var curHr = today.getHours()
 
-    <script>
-        var today = new Date()
-        var curHr = today.getHours()
+          if (curHr >= 0 && curHr < 6) {
+              document.getElementById("demo").innerHTML = 'What are you doing that early?';
+          } else if (curHr >= 6 && curHr <= 12) {
+              document.getElementById("demo").innerHTML = 'GOOD MORNING SRIJITA!🔆';
+          } else if (curHr >= 12 && curHr < 17) {
+              document.getElementById("demo").innerHTML = 'GOOD AFTERNOON SRIJITA!🌄';
+          } else {
+              document.getElementById("demo").innerHTML = 'GOOD EVENING SRIJITA!🌃';
+          }
 
-        if (curHr >= 0 && curHr < 6) {
-            document.getElementById("demo").innerHTML = 'What are you doing that early?';
-        } else if (curHr >= 6 && curHr <= 12) {
-            document.getElementById("demo").innerHTML = 'GOOD MORNING SRIJITA!🔆';
-        } else if (curHr >= 12 && curHr < 17) {
-            document.getElementById("demo").innerHTML = 'GOOD AFTERNOON SRIJITA!🌄';
-        } else {
-            document.getElementById("demo").innerHTML = 'GOOD EVENING SRIJITA!🌃';
-        }
-
-    </script>
-    <h3>I HOPE U HAVE A GREAT DAY</h3>
-   
-    <h3 id="datetime"></h3>
-
-    <script>
-        // create a function to update the date and time
-        function updateDateTime() {
-            // create a new `Date` object
-            const now = new Date();
-
-            // get the current date and time as a string
-            const currentDateTime = now.toLocaleString();
-
-            // update the `textContent` property of the `h3` element with the `id` of `datetime`
-            document.querySelector('#datetime').textContent = currentDateTime;
-        }
-
-        // call the `updateDateTime` function every second
-        setInterval(updateDateTime, 1000);
-    </script>
-    <h3 id="datetime"></h3>
-
-    <script>
-        // create a function to update the date and time
-        function updateDateTime() {
-            // create a new `Date` object
-            const now = new Date();
-
-            // get the current date components
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0'); // January is 0!
-            const year = now.getFullYear();
-
-            // get the current time components
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-
-            // format date and time
-            const formattedDate = `${day}-${month}-${year}`;
-            const formattedTime = `${hours}:${minutes}:${seconds}`;
-
-            // update the `textContent` property of the `h3` element with the `id` of `datetime`
-            document.querySelector('#datetime').textContent = `${formattedDate} ${formattedTime}`;
-        }
-
-        // call the `updateDateTime` function every second
-        setInterval(updateDateTime, 1000);
-    </script>
+      </script>
 
 
-    <div id="battery-status">
-        Battery Percentage: <span id="battery-percentage">Loading...</span>
-        <span id="charging-status"></span>
-    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if ('getBattery' in navigator) {
-                navigator.getBattery().then(battery => {
-                    function updateBatteryStatus() {
-                        const percentage = Math.round(battery.level * 100);
-                        document.getElementById('battery-percentage').textContent = percentage + '%';
-                        if (battery.charging) {
-                            document.getElementById('charging-status').textContent = ' (Charging)';
-                        } else {
-                            document.getElementById('charging-status').textContent = '';
-                        }
-                    }
+  <h3>I HOPE U HAVE A GREAT DAY</h3>
 
-                    updateBatteryStatus();
+  <h3 id="datetime"></h3>
 
-                    battery.addEventListener('levelchange', updateBatteryStatus);
-                    battery.addEventListener('chargingchange', updateBatteryStatus);
-                });
+  <script>
+    // create a function to update the date and time
+    function updateDateTime() {
+      // create a new `Date` object
+      const now = new Date();
+
+      // get the current date and time as a string
+      const currentDateTime = now.toLocaleString();
+
+      // update the `textContent` property of the `h3` element with the `id` of `datetime`
+      document.querySelector('#datetime').textContent = currentDateTime;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+  </script>
+  <h3 id="datetime"></h3>
+
+  <script>
+    // create a function to update the date and time
+    function updateDateTime() {
+      // create a new `Date` object
+      const now = new Date();
+
+      // get the current date components
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0'); // January is 0!
+      const year = now.getFullYear();
+
+      // get the current time components
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+
+      // format date and time
+      const formattedDate = `${day}-${month}-${year}`;
+      const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+      // update the `textContent` property of the `h3` element with the `id` of `datetime`
+      document.querySelector('#datetime').textContent = `${formattedDate} ${formattedTime}`;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+  </script>
+  <div id="battery-status">
+    Battery Percentage: <span id="battery-percentage">Loading...</span>
+    <span id="charging-status"></span>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if ('getBattery' in navigator) {
+        navigator.getBattery().then(battery => {
+          function updateBatteryStatus() {
+            const percentage = Math.round(battery.level * 100);
+            document.getElementById('battery-percentage').textContent = percentage + '%';
+            if (battery.charging) {
+              document.getElementById('charging-status').textContent = ' (Charging)';
             } else {
-                document.getElementById('battery-percentage').textContent = 'Battery API not supported';
+              document.getElementById('charging-status').textContent = '';
             }
+          }
+
+          updateBatteryStatus();
+
+          battery.addEventListener('levelchange', updateBatteryStatus);
+          battery.addEventListener('chargingchange', updateBatteryStatus);
         });
-    </script>
-
-
-
-    <span id="my"><h2><u>MY SMALL WORLD</u>🌎</h2></span>
-
-    
-
-    <div><h3><u>HOME</u>🏠︎</h3></div>
-    <p><a style="text-decoration:none" target="_blank" href="https://meet.google.com/bwb-ckpd-mjj">Way to our sweet
-            home🏠❤️</a></p>
-    <div><h2><u>Links to become doctor</u>👩‍🔬</h2></div>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.youtube.com">Youtube ▶</a></p>
-    <h3><a target="_blank" href="https://www.pw.live">Achieve my dream(PW)</a></h3>
-    <div>
-        <h3><a target="_blank"
-                href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/batch-overview?came_from=my-batches&activeSection=All%20Classes">Subjects🎓</a>
-        </h3>
-    </div>
-    <p><a style="text-decoration:none" target="_blank"
-            href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/physics-128038/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Physics&batchSubjectId=664af18505b05b0018e22da9">Physics🪐</a>
-
-    </p>
-    <p><a class="bapp2" style="text-decoration:none" target="_blank"
-            href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/physical-chemistry-491985/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Physical%20Chemistry&batchSubjectId=664af221ec1436001853ffc3">Chemistry⚗️</a>
-
-
-    </p>
-    <p><a style="text-decoration:none" target="_blank"
-            href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/botany-276723/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Botany&batchSubjectId=664af1b09d68ed00183a0228">Botany🌱</a>
-    </p>
+      } else {
+        document.getElementById('battery-percentage').textContent = 'Battery API not supported';
+      }
+    });
+  </script>
 
 
 
 
 
-    <p><a style="text-decoration:none" target="_blank"
-            href="https://www.pw.live/study/batches/lakshya-neet-2-0-2025-780344/subjects/zoology-128384/subject-topics?came_from=my-batches&activeSection=All%20Classes&subject=Zoology&batchSubjectId=664af1d613c84b00180f9c7f">Zoology🫀</a>
-
-    </p>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.cymath.com/">Math Solver&#128218</a></p>
-    <div><h2><u>Socials</u>📲</h2></div>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.instagram.com/">Instagram📸</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://web.whatsapp.com/">Whatsapp ✆</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.facebook.com/">Facebook ⓕ</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://in.pinterest.com/">Pinterest📌</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://discord.com/channels/@me">Discord💻</a></p>
-    <div><h2><u>Entertainment District</u>🎥</h2></div>
-    <p><a style="text-decoration:none" target="_blank" href="https://open.spotify.com/">Spotify🎧</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.netflix.com/in/">Netflix🍿</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://www.primevideo.com/">Amazon Prime🎬</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://ww8.gogoanimes.fi/">Anime🍥</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://myanimelist.net/">Anime List⛩️</a></p>
-    <p><a style="text-decoration:none" target="_blank" href="https://monkeytype.com/">Typing Test⌨️</a></p>
 
 
 
 
-    <script>
-        window.addEventListener('beforeunload', function (e) {
-            // Cancel the event
-            e.preventDefault(); 
-            // Most browsers require returnValue to be set
-            e.returnValue = '';
-            // You can also return a string here, but it's not displayed in modern browsers
-            return '';
-        });
-    </script>
 
 
 
-    <link rel="stylesheet" href="script.js">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
