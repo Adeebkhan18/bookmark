@@ -1,6 +1,6 @@
 body {
-  /* background-image: url("https://mrwallpaper.com/images/hd/motivational-quote-desktop-wallpaper-on-a-sleek-laptop-5zdo5847qtjz7eow.jpg"); */
-
+  /* background-image: url("https://c4.wallpaperflare.com/wallpaper/922/126/381/lofigirl-lofi-sleeping-schoolbags-sunlight-hd-wallpaper-preview.jpg"); */
+  
   background-size: cover;
   background-repeat: auto;
   
@@ -21,15 +21,18 @@ body {
 }
 
 a:visited {
-  color: rgb(6, 251, 38);
+  color: rgb(95, 228, 255);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:link {
-  color: rgb(25, 238, 107);
+  color: rgb(22, 171, 230);
   background-color: transparent;
   text-decoration: none;
+  /* font-size: 20px; */
+  font-style:oblique;
+  /* word-spacing: 20px; */
 }
 
 
@@ -45,11 +48,10 @@ a:active {
   text-decoration: underline;
 }
 
-
 div {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
-  color: rgb(255, 0, 0);
+  color: rgb(245, 30, 30);
 }
 
 #my {
@@ -76,8 +78,17 @@ h1 {
   /* text-shadow: 2px 2px 20px #f97c00; */
   margin: 7px;
 }
+
+/* .stopWatch{
+    float: right;
+    position: relative;
+    clear:right;
+    justify-content: right;
+  } */
 .app {
   float:none;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 .app2 {
@@ -161,4 +172,17 @@ h1 {
 }
 h3{
   color: aliceblue;
+  background-color: rgba(23, 23, 23, 0.4);
+}
+
+
+
+span{
+  color: #f5f5f5;
+  font-size: large;
+  background-color: rgba(8, 8, 8, 0.4);
+}
+*{
+  margin: 0px;
+  padding: 0px;
 }
