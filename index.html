@@ -75,10 +75,10 @@
               
                         <div class="spotify">
                           <iframe class="app" style="border-radius:50px"
-                              src="https://open.spotify.com/embed/playlist/37i9dQZF1EJBbcqOd2BzIs?utm_source=generato" width="530px" 
+                              src="https://open.spotify.com/embed/playlist/37i9dQZF1EJBbcqOd2BzIs?utm_source=generato" max-width="530px" 
                               height="315px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
                           <div class="youtube">
-                              <iframe class="app2" width="500px" height="315px"
+                              <iframe class="app2" max-width="500px" max-height="315px"
                               src="https://www.youtube.com/embed/videoseries?si=w_vbIob75SIiYmF2&amp;list=PL9sIhT5cGqDh22ldxNRcXuSWurN_bwWlS"
                               title="YouTube video player" frameborder="0"
                               allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
@@ -314,7 +314,7 @@ crossorigin="anonymous"></script>
 <body>
   
   <video id="background-video" autoplay loop muted poster="Y2meta.app-(NO COPYRIGHT) _ Short Blur Rain Cinematic Background Video _ (NO WATERMARK)-(720p60).mp4">
-    <source src="Y2meta.app-(NO COPYRIGHT) _ Short Blur Rain Cinematic Background Video _ (NO WATERMARK)-(720p60).mp4" type="video/mp4">
+    <source src="Pink Heart Background Screensaver Loop 1 Hour 1080p HD (1080p, h264, youtube) (online-video-cutter.com).mp4" type="video/mp4">
   </video>
   
     
@@ -368,13 +368,19 @@ crossorigin="anonymous"></script>
       const year = now.getFullYear();
 
       // get the current time components
-      const hours = String(now.getHours()).padStart(2, '0');
+      let hours = now.getHours();
       const minutes = String(now.getMinutes()).padStart(2, '0');
       const seconds = String(now.getSeconds()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+
+      // Convert to 12-hour format
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' should be '12'
+      hours = String(hours).padStart(2, '0');
 
       // format date and time
       const formattedDate = `${day}-${month}-${year}`;
-      const formattedTime = `${hours}:${minutes}:${seconds}`;
+      const formattedTime = `${hours}:${minutes}:${seconds} ${ampm}`;
 
       // update the `textContent` property of the `h3` element with the `id` of `datetime`
       document.querySelector('#datetime').textContent = `${formattedDate} ${formattedTime}`;
@@ -423,7 +429,7 @@ crossorigin="anonymous"></script>
 
 
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a id="count" href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip2" data-timezone="Asia/Kolkata" data-textcolor="#fc0000" data-date="2025-05-01 18:02" data-digitscolor="##FFFFFF">NEET COUNTDOWN</a>
+<a href="https://logwork.com/countdown-ge48" class="countdown-timer" data-style="flip2" data-timezone="Asia/Kolkata" data-textcolor="#ff007f" data-date="2030-01-01 12:20" data-background="#4b0082" data-digitscolor="#ffd700" data-unitscolor="#ff007f">Days to 'I Do'</a>
 
 
 
